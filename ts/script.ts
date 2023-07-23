@@ -248,7 +248,7 @@ function getExchangeRate() {
   // Set the exchange rate text to "Getting exchange rate..." while the exchange rate is being fetched
   exchangeRateTxt.innerText = "Getting exchange rate...";
   // Set the URL for the exchange rate API, using the "from" currency as the base currency
-  let url = `https://v6.exchangerate-api.com/v6/b2c0f4ced572c55ce7beea81/latest/${fromCurrency.value}`;
+  let url = `https://v6.exchangerate-api.com/v6/yourApiKey/latest/${fromCurrency.value}`;
   // Fetch the exchange rate and update the exchange rate text when the response is received
   fetch(url)
     .then((response) => response.json())

@@ -1,0 +1,139 @@
+/* Import Google Font - Poppins */
+@import url("[https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap ↗](https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap)");
+
+/* Set default styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Set body styles */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+/* Set text selection styles */
+::selection {
+  color: #fff;
+  background: #004aa1;
+}
+
+/* Set styles for wrapper element */
+.wrapper {
+  width: 370px;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Set styles for header element within wrapper */
+.wrapper header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Set styles for form element within wrapper */
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+/* Set styles for input and select elements within form */
+form :where(input, select) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Set styles for p elements within form */
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Set styles for input element within form */
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+/* Set styles for input element when focused within form */
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #004aa1;
+}
+
+/* Set styles for drop-list element within form */
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Set styles for select-box element within drop-list */
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+}
+
+/* Set styles for img element within select-box */
+.select-box img {
+  max-width: 21px;
+}
+
+/* Set styles for select element within select-box */
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+
+/* Set styles for scrollbar within select-box */
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+/* Set styles for icon element within drop-list */
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+/* Set styles for exchange-rate element within form */
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+/* Set styles for p elements within wrapper */
+.wrapper p {
+  text-align: center;
+}

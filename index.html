@@ -1,0 +1,70 @@
+<!-- This is an HTML document -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- This specifies the character encoding of the document -->
+    <meta charset="utf-8" />
+    <!-- This sets the title of the document -->
+    <title>Currency Converter</title>
+    <!-- This links to an external stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- This sets the viewport to the width of the device and scales the page appropriately -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This links to a Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- This is the wrapper container for the currency converter app -->
+    <div class="wrapper">
+      <!-- This is the header of the app -->
+      <header>
+        <img src="./media/icons/icon64.png" alt="" />
+      </header>
+      <!-- This is the form for converting currencies -->
+      <form action="#">
+        <!-- This is the container for the amount input field -->
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1" />
+        </div>
+        <!-- This is the container for the dropdown lists for selecting currencies -->
+        <div class="drop-list">
+          <!-- This is the container for the "From" currency dropdown list -->
+          <div class="from">
+            <p>From</p>
+            <!-- This is the container for the "From" currency dropdown list with an image and the select box -->
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/tr.png" alt="flag" />
+              <select>
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
+          <!-- This is the exchange icon -->
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <!-- This is the container for the "To" currency dropdown list -->
+          <div class="to">
+            <p>To</p>
+            <!-- This is the container for the "To" currency dropdown list with an image and the select box -->
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
+              <select>
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- This is the container for displaying the exchange rate -->
+        <div class="exchange-rate">Getting exchange rate...</div>
+      </form>
+      <!-- This is the footer of the app -->
+      <p>© Sharafdin 2023</p>
+    </div>
+
+    <!-- This links to an external TypeScript file that contains the app functionality -->
+    <script src="ts/script.js"></script>
+  </body>
+</html>
